@@ -1,0 +1,125 @@
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    padding: 40px;
+}
+
+p {
+    line-height: 25px;
+}
+
+.mainbox {
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    margin: auto;
+    border-radius: 10px;
+    width: 650px;
+    /*width: 325px;*/
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'box1 box1' 'box2 box3';
+    /*grid-template-areas: 'box1' 'box2' 'box3';*/
+}
+
+.grid-container > div {
+    padding: 20px 40px;
+}
+
+.topbox {
+    background-color: white;
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    grid-area: box1;
+}
+
+.bottomleft {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    grid-area: box2;
+}
+
+.bottomright {
+    background-color: rgb(74,189,189);
+    grid-area: box3;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+h3 {
+    color:hsl(204, 43%, 93%);
+    font-size: 18px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.permonth {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(105,210,213);  
+    vertical-align: middle;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.pricewrap {
+    line-height: 40px;
+}
+
+.feature-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color:hsl(204, 43%, 93%);
+    opacity: 0.9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.feature-list li {
+    line-height: 20px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+	border-radius: 5px;
+	border: none;
+	box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+	font-weight: 400;
+	padding: 15px 0;
+    color: hsl(204, 43%, 93%);
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    filter: brightness(110%);
+    box-shadow: 5px 5px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 650px) {
+    .grid-container { grid-template-areas: 'box1' 'box2' 'box3'; }
+    .mainbox { width: 325px; }
+}
